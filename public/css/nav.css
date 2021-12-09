@@ -1,0 +1,12 @@
+.nav-buttons{
+    text-decoration: none;
+    color: white !important ; 
+    font-weight: bold;
+}
+.nav-buttons:hover{
+    color:red !important;
+}
+
+.site-header{
+    background-color: rgb(0, 0, 0);
+}
