@@ -17,7 +17,7 @@
                 <div class="position-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link text-painel" aria-current="page" href="index.html">
+                            <a class="nav-link text-painel" aria-current="page" href="/">
                                 <span data-feather="home"></span>
                                 Dashboard
                             </a>
