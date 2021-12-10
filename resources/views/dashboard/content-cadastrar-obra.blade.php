@@ -1,5 +1,5 @@
 @extends('dashboard.layout.admin');
-
+@section('title')Cadastrar Obra @endsection
 @section ('content')
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
         style="background-color: rgb(0, 0, 0) !important;">

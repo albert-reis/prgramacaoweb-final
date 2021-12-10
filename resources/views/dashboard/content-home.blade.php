@@ -1,5 +1,5 @@
 @extends('dashboard.layout.site');
-
+@section('title')Home @endsection
 @section('content')
     <!-- <nav class="site-header sticky-top py-1">
             <div class="container d-flex flex-column flex-md-row justify-content-between">
