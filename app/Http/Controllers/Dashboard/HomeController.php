@@ -14,4 +14,9 @@ class HomeController extends Controller
         $contato = Contato::all();
         return view('dashboard.content-home', compact('obras'), compact('contato'));
     }
+
+    public function about () {
+        $contato = Contato::all();
+        return view('dashboard.content-about', compact('contato'));
+    }
 }

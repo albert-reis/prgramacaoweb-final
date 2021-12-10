@@ -1,5 +1,5 @@
 @extends('dashboard.layout.site');
-@section('title')Home @endsection
+@section('title')Início @endsection
 @section('content')
     <!-- <nav class="site-header sticky-top py-1">
             <div class="container d-flex flex-column flex-md-row justify-content-between">
@@ -16,9 +16,9 @@
             </button>
             <div class="collapse navbar-collapse effect topLeftBorders" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0 mx-auto">
-                    <a class="btn my-2 my-sm-0 nav-buttons far fa-handshake" href="#sobre"> Obras</a>
-                    <a class="btn my-2 my-sm-0 nav-buttons far fa-address-card" href="#servicos"> Sobre</a>
-                    <a class="btn my-2 my-sm-0 nav-buttons far fa-user-circle" href="#racas"> Admin</a>
+                    <a class="btn my-2 my-sm-0 nav-buttons far fa-handshake" href="#obras"> Obras</a>
+                    <a class="btn my-2 my-sm-0 nav-buttons far fa-address-card" href="/about"> Sobre</a>
+                    <a class="btn my-2 my-sm-0 nav-buttons far fa-user-circle" href="/admin"> Admin</a>
                 </ul>
             </div>
         </div>

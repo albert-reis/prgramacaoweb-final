@@ -3,9 +3,7 @@
 use App\Http\Controllers\Dashboard\HomeController;
 use App\Http\Controllers\Dashboard\AdminController;
 use App\Http\Controllers\Dashboard\CadastrarObraController;
-use App\Http\Controllers\Dashboard\CadastrarUsuarioController;
 use App\Http\Controllers\Dashboard\ContatoController;
-use App\Http\Controllers\Dashboard\ListarUsuarioController;
 use App\Http\Controllers\Dashboard\ListarObraController;
 use App\Http\Controllers\Dashboard\UsuarioController;
 use Illuminate\Support\Facades\Route;
@@ -29,6 +27,7 @@ Route::get('/listarusuario', [UsuarioController::class, 'list']);
 Route::get('/listarobra', [ListarObraController::class, 'index']);
 Route::get('/contact', [ContatoController::class, 'form'])->name('contact.form');
 Route::get('/listcontact', [ContatoController::class, 'list']);
+Route::get('/about', [HomeController::class, 'about']);
 
 
 Route::get('/post/save', [CadastrarObraController::class, 'save'])->name('post.save');

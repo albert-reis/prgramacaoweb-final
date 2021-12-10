@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Marcelo Albert Santana dos Reis, Ernani Alexandre Wippel Neto e Vitor Krowczuk Beirão">
-    <link rel="icon" href="img/aba.png">
+    <title>@yield('title')</title>
+    <link rel="icon" href="{{ asset('img/aba.png') }}">
 
     <!-- CSS -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
