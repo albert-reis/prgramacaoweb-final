@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Marcelo Albert Santana dos Reis, Ernani Alexandre Wippel Neto e Vitor Krowczuk Beirão">
     <link rel="icon" href="img/aba.png">
+    <title>@yield('title') - Wippel</title>
 
     <!-- CSS -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

@@ -1,5 +1,5 @@
 @extends('dashboard.layout.admin');
-
+@section('title')Admin @endsection
 @section ('content')
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
         style="background-color: rgb(0, 0, 0) !important;">
@@ -23,7 +23,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-painel" href="/cadastrarobra">
+                            <a class="nav-link text-painel" href="/cadastrar">
                                 <span class="text-painel" data-feather="plus-circle"></span>
                                 Cadastrar Obras
                             </a>
@@ -32,6 +32,12 @@
                             <a class="nav-link text-painel" href="/cadastrarusuario">
                                 <span data-feather="plus-circle"></span>
                                 Cadastrar Usuários
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-painel" href="/contact">
+                                <span data-feather="plus-circle"></span>
+                                Cadastrar Contato
                             </a>
                         </li>
                         <li class="nav-item">
@@ -44,6 +50,12 @@
                             <a class="nav-link text-painel" href="/listarobra">
                                 <span data-feather="list"></span>
                                 Listar Obras
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-painel" href="/listcontact">
+                                <span data-feather="list"></span>
+                                Listar Contato
                             </a>
                         </li>
                 </div>

@@ -27,7 +27,8 @@ Route::get('/cadastrarobra/{_id?}', [CadastrarObraController::class, 'index'])->
 Route::get('/cadastrarusuario/{_id?}', [UsuarioController::class, 'form'])->name('user.form');
 Route::get('/listarusuario', [UsuarioController::class, 'list']);
 Route::get('/listarobra', [ListarObraController::class, 'index']);
-Route::get('/contact', [ListarObraController::class, 'form']);
+Route::get('/contact', [ContatoController::class, 'form'])->name('contact.form');
+Route::get('/listcontact', [ContatoController::class, 'list']);
 
 
 Route::get('/post/save', [CadastrarObraController::class, 'save'])->name('post.save');

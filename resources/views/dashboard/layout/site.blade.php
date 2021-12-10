@@ -23,19 +23,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color: black;">
+<body style="background-color: black !important;">
 
     @yield('content');
 
     <!-- Footer -->
-    <footer class="page-footer font-small blue">
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2021 Wippel Produções
-            <a href="https://github.com/albert-reis/projetoY" class="fab fa-github"> GitHub</a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/albert-reis/prgramacaoweb-final" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
         </div>
-        <!-- Copyright -->
+        <!-- Grid container -->
 
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <?php foreach ($contato as $contatos) {?>
+            <div><span>Rua: {{$contatos->road}}</span></div>
+            <div><span>Bairro: {{$contatos->district}}</span></div>
+            <div><span>Telefone: {{$contatos->contact}}</span></div>
+            <?php } ?>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Wippel Produções</a>
+        </div>
+
+        <!-- Copyright -->
     </footer>
 
     <script src="{{ asset('js/app.js') }}"></script>

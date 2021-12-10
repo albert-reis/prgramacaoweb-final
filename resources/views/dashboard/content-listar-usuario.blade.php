@@ -35,6 +35,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-painel" href="/contact">
+                                <span data-feather="plus-circle"></span>
+                                Cadastrar Contato
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-painel-select" href="/listarusuario">
                                 <span data-feather="list"></span>
                                 Listar Usuários
@@ -44,6 +50,12 @@
                             <a class="nav-link text-painel" href="/listarobra">
                                 <span data-feather="list"></span>
                                 Listar Obras
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-painel" href="/listcontact">
+                                <span data-feather="list"></span>
+                                Listar Contato
                             </a>
                         </li>
                 </div>

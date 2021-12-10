@@ -23,7 +23,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-painel" href="/cadastrarobra">
+                            <a class="nav-link text-painel" href="/contact">
                                 <span class="text-painel" data-feather="plus-circle"></span>
                                 Cadastrar Obras
                             </a>
@@ -35,15 +35,27 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-painel" href="/cadastrarobra">
+                                <span class="text-painel" data-feather="plus-circle"></span>
+                                Cadastrar Contato
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-painel" href="/listarusuario">
                                 <span data-feather="list"></span>
                                 Listar Usuários
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-painel-select" href="/listarobra">
+                            <a class="nav-link text-painel" href="/listarobra">
                                 <span data-feather="list"></span>
                                 Listar Obras
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-painel-select" href="/listcontact">
+                                <span data-feather="list"></span>
+                                Listar Contato
                             </a>
                         </li>
                 </div>
@@ -58,24 +70,23 @@
                         <thead>
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">Título</th>
-                                <th scope="col">Descrição</th>
-                                <th scope="col">Imagem</th>
+                                <th scope="col">Rua</th>
+                                <th scope="col">Bairro</th>
+                                <th scope="col">Telefone</th>
                                 <th scope="col">Ações</th>
                             </tr>
                         </thead>
                         <!-- As linhas de dados da tabela são gerados no arquivo main.js (função loadItemsTable()) -->
                         <tbody>
-                            <?php foreach($obras as $obra) { ?>
+                            <?php foreach($contato as $contatos) { ?>
                             <tr>
-                                <td>{{ $obra->_id }}</td>
-                                <td>{{ $obra->title }}</td>
-                                <td>{{ $obra->description }}</td>
-                                <td>{{ $obra->image }}</td>
-                                <!--<td><img src="{{ $obra->image }}" alt=""></td>-->
+                                <td>{{ $contatos->_id }}</td>
+                                <td>{{ $contatos->road }}</td>
+                                <td>{{ $contatos->district }}</td>
+                                <td>{{ $contatos->contact }}</td>
                                 <td>
-                                    <a href="{{ route('obra.form', $obra->_id) }}" class="btn btn-warning btn-sm">Atualizar</a>
-                                    <a href="{{ route('obra.delete', $obra->_id) }}" class="btn btn-danger btn-sm">Deletar</a>
+                                    <a href="{{ route('contact.form', $contatos->_id) }}" class="btn btn-warning btn-sm">Atualizar</a>
+                                    <a href="{{ route('contact.delete', $contatos->_id) }}" class="btn btn-danger btn-sm">Deletar</a>
                                 </td>
                             </tr>
                             <?php } ?>
