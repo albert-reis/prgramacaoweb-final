@@ -4,6 +4,7 @@ use App\Http\Controllers\Dashboard\HomeController;
 use App\Http\Controllers\Dashboard\AdminController;
 use App\Http\Controllers\Dashboard\CadastrarObraController;
 use App\Http\Controllers\Dashboard\CadastrarUsuarioController;
+use App\Http\Controllers\Dashboard\ContatoController;
 use App\Http\Controllers\Dashboard\ListarUsuarioController;
 use App\Http\Controllers\Dashboard\ListarObraController;
 use App\Http\Controllers\Dashboard\UsuarioController;
@@ -26,6 +27,7 @@ Route::get('/cadastrarobra/{_id?}', [CadastrarObraController::class, 'index'])->
 Route::get('/cadastrarusuario/{_id?}', [UsuarioController::class, 'form'])->name('user.form');
 Route::get('/listarusuario', [UsuarioController::class, 'list']);
 Route::get('/listarobra', [ListarObraController::class, 'index']);
+Route::get('/contact', [ListarObraController::class, 'form']);
 
 
 Route::get('/post/save', [CadastrarObraController::class, 'save'])->name('post.save');
@@ -35,6 +37,11 @@ Route::get('/post/delete/{_id}', [ListarObraController::class, 'delete'])->name(
 Route::get('/user/save', [UsuarioController::class, 'save'])->name('user.save');
 Route::get('/user/update/{_id}', [UsuarioController::class, 'update'])->name('user.update');
 Route::get('/user/delete/{_id}', [UsuarioController::class, 'delete'])->name('user.delete');
+
+Route::get('/contact/save', [ContatoController::class, 'save'])->name('contact.save');
+Route::get('/contact/update/{_id}', [ContatoController::class, 'update'])->name('contact.update');
+Route::get('/contact/delete/{_id}', [ContatoController::class, 'delete'])->name('contact.delete');
+
 //Route::get('/post/save', 'Dashboard\CadastrarObraController@save')->name('post.save');
 //Route::resource('usuarios', ListarUsuarioController::class);
 

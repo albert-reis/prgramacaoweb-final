@@ -13,6 +13,6 @@ class Contato extends Eloquent
     //protected $collection = 'obras';
 
     protected $fillable = [
-        'rua', 'bairro', 'telefone',
+        'road', 'district', 'contact',
     ];
 }
